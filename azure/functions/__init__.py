@@ -16,6 +16,7 @@ from ._durable_functions import OrchestrationContext, EntityContext
 from .meta import get_binding_registry
 from .extension import (ExtensionMeta, FunctionExtensionException,
                         FuncExtensionBase, AppExtensionBase)
+from .app import AzureFunctionApp
 
 # Import binding implementations to register them
 from . import blob  # NoQA
@@ -64,7 +65,8 @@ __all__ = (
     'AppExtensionBase',
     'FuncExtensionBase',
     'ExtensionMeta',
-    'FunctionExtensionException'
+    'FunctionExtensionException',
+    'AzureFunctionApp'
 )
 
 __version__ = '1.7.2'
